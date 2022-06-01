@@ -1,0 +1,24 @@
+// StringWriter
+
+import java.io.StringWriter;
+
+public class Example1 {
+
+    public static void main(String[] args) {
+
+        String data = "This is the text in the string.";
+
+        try {
+            StringWriter output = new StringWriter();
+            output.write(data);
+            System.out.println("Data in the StringWriter: " + output);
+            output.close();
+        }
+
+        catch (Exception e) {
+            e.getStackTrace();
+        }
+    
+    }
+
+}
